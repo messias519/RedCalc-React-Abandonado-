@@ -1,0 +1,99 @@
+ 
+	// nora / dobuta / fentanil / precedex / propofol / midazolam 
+	// atracurio / rocuronio / cisatracurio / pancuronio / nipride 
+	// tridil
+    
+        #midazolan
+        Padrão Mida 40ml + Sf 60ml - Clique para modificar
+        mida_mlhmax = (600 * peso) / (2 * 1000) # ml/h máximo
+        mida_mlhmin = (20 * peso) / (2 * 1000) # ml/h mínimo
+
+       #propofol
+       Padrão Propofol 80ml - Clique para modificar
+        prop_mlhmax = (5 * peso) / (10) # ml/h máximo
+            prop_mlhmin = (0,5 * peso) / (10) # ml/h mínimo
+
+        #fentanil
+Padrão Fenta 10ml + Sf 40ml - Clique para modificar
+fenta_mlhmax = (5 * peso) / (10) # ml/h máximo
+            fenta_mlhmin = (0,5 * peso) / (10) # ml/h mínimo
+            
+        #cetamina
+         Padrão Cetamina 10ml + Sf 490ml
+         ceta_mlhmax = (0,5 * 60) / (1) # ml/h máximo
+            ceta_mlhmin = (0,1 * 60) / (1) # ml/h mínimo
+            
+
+        #precedex
+        Padrão Precedex 2ml + Sf 48ml
+        prec_mlhmax = (0,7 * peso) / (4) # ml/h máximo
+            prec_mlhmin = (0,2 * peso) / (4) # ml/h mínimo
+            
+    
+        #cisatracúrio
+    Padrão Cisatracúrio 25ml + Sf 75ml
+    cisa_mlhmax = ((4 * peso * 60) / 1000) / (0,5)  # ml/h máximo
+            cisa_mlhmin = ((1 * peso * 60) / 1000) / (0,5)  # ml/h mínimo
+
+        #rocurônio
+Padrão Rocurônio 25ml + Sf 225ml - Clique para modificar'):
+rocu_mlhmax = (0,6 * peso) / 1  # ml/h máximo
+            rocu_mlhmin = (0,3 * peso) / 1  # ml/h mínimo
+
+        #atracúrio
+Padrão Atracúrio 25ml + Sf 225ml - Clique para modificar'):
+atra_mlhmax = ((10 * peso * 60) / 1000) / 1  # ml/h máximo
+            atra_mlhmin = ((5 * peso * 60) / 1000) / 1  # ml/h mínimo
+                
+        #pancurônio
+        Padrão Pancurônio 20ml + Sf 80ml - Clique para modificar'):
+        panc_mlhmax = (0,1 * peso) / 0,4  # ml/h máximo
+            panc_mlhmin = (0 * peso) / 0,4  # ml/h mínimo
+
+        # nitroglicerina
+Padrão Tridil 10ml + Sf 240ml - Clique para modificar
+nitro_mlhmax = (20 * peso * 6) / (100 / 0,2)  # ml/h máximo
+            nitro_mlhmin = (5 * peso * 6) / (100 / 0,2)  # ml/h mínimo
+                
+        # nitroprussiato
+        Padrão Nipride 2ml + Sf 248ml - Clique para modificar'):
+        nipri_mlhmax = ((10 * peso * 60 ) / 1000) / 0,2  # ml/h máximo
+            nipri_mlhmin = ((0,3 * peso * 60 ) / 1000) / 0,2  # ml/h mínimo
+                
+        #noradrenalina
+        noradrenalina = st.checkbox("Noradrenalina")
+        nora_mlhmax = ((4 * peso) / 64) * 60  # ml/h máximo
+            nora_mlhmin = ((0 * peso) / 64) * 60  # ml/h mínimo
+                
+        #vasopressina
+        Padrão Vasopressina 2ml + Sf 248ml 
+            vaso_mlhmax = (0,04 / 0,2) * 60  # ml/h máximo
+            vaso_mlhmin = (0,01 / 0,2) * 60  # ml/h mínimo
+
+            
+        #adrenalina
+        Padrão Adrenalina 16ml + Sf 236ml - Clique para modificar'):
+        adr_mlhmax = (10 * 60) / 64  # ml/h máximo
+            adr_mlhmin = (2 * 60) / 64  # ml/h mínimo
+                
+
+        #dobutamina
+Padrão Dobutamina 20ml + Sf 230ml - Clique para modificar'):
+                dobu_doseamp = st.number_input('Qual a concentração por ml da ampola? (mcg/ml)', 0.0, 103.1, 12.5)
+                dobu_dosesol = st.number_input('Qual a concentração final da solução? (mcg/ml)', 0.0, 301.0, 1.0)
+                dobu_volsol = st.number_input('Qual o volume da medicação? (ml)', 0.0, 103.0, 20.0)
+                dobu_voltotal = st.number_input('Qual volume final da solução? (ml)', 0.0, 996.0, 250.0)
+                dobu_dosemax = st.number_input('Qual a dose máxima? (mcg/kg/min)', 0.0, 102.1, 20.0)
+                dobu_dosemin = st.number_input('Qual a dose mínima? (mcg/kg/min)', 0.0, 103.0, 2.5)
+
+            dobu_mlhmax = ((dobu_dosemax * peso) / (dobu_dosesol * 1000)) * 60  # ml/h máximo
+            dobu_mlhmin = ((dobu_dosemin * peso) / (dobu_dosesol * 1000)) * 60# ml/h mínimo
+
+            dobu_mlhatual = st.number_input('Ml/h atual?', 0, 215, 10)
+            dobu_doseatual = ((((dobu_mlhatual * dobu_dosesol) / 60) / peso) * 1000)
+            st.write('Dose atual', round(dobu_doseatual, 2), 'mcg/kg/min')
+            st.write('MIN', round(dobu_mlhmin, 1), 'ml/h  MAX', round(dobu_mlhmax, 1), 'ml/h')
+
+            st.info('add texto.')
+            st.markdown("---")
+        #dopamina

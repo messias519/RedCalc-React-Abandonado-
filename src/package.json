@@ -1,0 +1,15 @@
+{
+	"name": "redcalc",
+	"version": "3.0.0",
+	"description": "A sua calculadora de doses para sedação e afins",
+	"keywords": [],
+	"homepage": "https://codesandbox.io/s/4j7m47vlm4",
+	"main": "index.js",
+	"dependencies": {
+		"@material-ui/core": "4.11.4",
+		"@material-ui/icons": "4.11.2",
+		"material-ui": "0.20.2",
+		"react": "latest",
+		"react-dom": "latest"
+	}
+}
