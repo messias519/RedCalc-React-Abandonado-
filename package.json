@@ -1,24 +1,24 @@
 {
-  "name": "redcalc",
-  "version": "0.0.162",
-  "description": "A sua calculadora de doses para sedação e afins",
-  "keywords": [],
-  "homepage": "https://codesandbox.io/s/4j7m47vlm4",
-  "main": "index.js",
-  "dependencies": {
-    "@material-ui/core": "4.11.4",
-    "@material-ui/icons": "4.11.2",
-    "material-ui": "0.20.2",
-    "react": "latest",
-    "react-dom": "latest"
-  },
-  "devDependencies": {
-    "react-scripts": "1.0.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+	"name": "RedCalc",
+	"version": "0.0.100",
+	"description": "Sua calculadora médica de doses e afins",
+	"keywords": [],
+	"homepage": "https://www.redcalc.com.br",
+	"main": "index.js",
+	"dependencies": {
+		"@material-ui/core": "4.11.4",
+		"@material-ui/icons": "4.11.2",
+		"material-ui": "0.20.2",
+		"react": "latest",
+		"react-dom": "latest"
+	},
+	"devDependencies": {
+		"react-scripts": "1.0.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject"
+	}
 }
