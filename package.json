@@ -1,24 +1,28 @@
 {
-	"name": "RedCalc",
-	"version": "0.0.100",
-	"description": "Sua calculadora médica de doses e afins",
-	"keywords": [],
-	"homepage": "https://www.redcalc.com.br",
-	"main": "index.js",
-	"dependencies": {
-		"@material-ui/core": "4.11.4",
-		"@material-ui/icons": "4.11.2",
-		"material-ui": "0.20.2",
-		"react": "latest",
-		"react-dom": "latest"
-	},
-	"devDependencies": {
-		"react-scripts": "1.0.0"
-	},
-	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test --env=jsdom",
-		"eject": "react-scripts eject"
-	}
+  "name": "RedCalc",
+  "version": "0.0.100",
+  "description": "Sua calculadora médica de doses e afins",
+  "keywords": [],
+  "homepage": "https://www.redcalc.com.br",
+  "main": "index.js",
+  "dependencies": {
+    "@material-ui/core": "4.11.4",
+    "@material-ui/icons": "4.11.2",
+    "material-ui": "0.20.2",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-native-elements": "3.4.2",
+    "react-native-numeric-input": "1.9.0",
+    "react-native-vector-icons": "8.1.0",
+    "react-native-web": "0.17.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }

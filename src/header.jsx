@@ -15,7 +15,11 @@ const useStyles = makeStyles((theme) => ({
 		marginRight: theme.spacing(2)
 	},
 	title: {
-		flexGrow: 1
+		flexGrow: 1,
+		fontFamily: "Lobster",
+		fontSize: 40,
+		padding: 5,
+		fontWeight: 400
 	}
 }));
 
@@ -24,7 +28,7 @@ export default function Header() {
 
 	return (
 		<div className={classes.root}>
-			<AppBar position="static" color="secondary">
+			<AppBar position="static" color="primary">
 				<Toolbar>
 					<IconButton
 						edge="start"

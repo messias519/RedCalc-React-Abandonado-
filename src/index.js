@@ -7,10 +7,10 @@ import Header from "./header";
 const tema = createMuiTheme({
 	palette: {
 		primary: {
-			main: "#006400"
+			main: "#b71c1c"
 		},
 		secondary: {
-			main: "#d32f2f"
+			main: "#263238"
 		}
 	}
 });
