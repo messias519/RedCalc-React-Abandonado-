@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
 		padding: 18
 	},
 	Subtitulo: {
-		fontSize: 16,
+		fontSize: 14,
 		fontFamily: "Bebas Neue",
 		fontWeight: "500",
 		color: "#ffffff",
