@@ -20,19 +20,20 @@ const useStyles = makeStyles((theme) => ({
 	Input: {
 		border: "2px solid #000000",
 		boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
-		height: 110,
+		height: 150,
 		width: 290,
 		padding: 18
 	},
 	Subtitulo: {
-		fontSize: 14,
+		fontSize: 20,
 		fontFamily: "Bebas Neue",
 		fontWeight: "500",
 		color: "#ffffff",
 		backgroundColor: "#263238",
 		border: "2px solid #ffffff",
 		borderRadius: 10,
-		textAlign: "center"
+		textAlign: "center",
+		width: 90
 	},
 
 	Titulo: {
@@ -174,35 +175,36 @@ export default function Calculadora() {
 
 			<Container className={classes.Input}>
 				<Grid container spacing={2} alignItems="center">
+					<Grid item className={classes.Subtitulo}>
+						<center> {p}kg </center>
+					</Grid>
 					<Grid item>
 						<Slider
 							value={p}
 							style={{ color: "black", width: 140, marginLeft: 5 }}
-							min={0}
+							min={40}
 							step={1}
 							max={150}
 							onChange={handleChange2}
 							valueLabelDisplay="auto"
 						/>
 					</Grid>
-					<Grid item className={classes.Subtitulo}>
-						<center> Peso de {p}kg </center>
-					</Grid>
 				</Grid>
+				<br />
 				<Grid container spacing={2} alignItems="center">
+					<Grid item className={classes.Subtitulo}>
+						<center> {mlh} ml/h </center>
+					</Grid>
 					<Grid item>
 						<Slider
 							value={mlh}
 							style={{ color: "black", width: 140, marginLeft: 5 }}
 							min={0}
 							step={1}
-							max={150}
+							max={100}
 							onChange={handleChange}
 							valueLabelDisplay="auto"
 						/>
-					</Grid>
-					<Grid item className={classes.Subtitulo}>
-						<center> {mlh} ml/h </center>
 					</Grid>
 				</Grid>
 			</Container>
@@ -224,7 +226,7 @@ export default function Calculadora() {
 							secondary={
 								<div>
 									<span className={classes.DoseDaDroga}>
-										Dose de {NoraDoseAtual.toFixed(2)}mcg/kg/min
+										Dose atual de {NoraDoseAtual.toFixed(2)}mcg/kg/min
 									</span>
 									<br />
 									<span className={classes.MlDaDroga}>
@@ -253,7 +255,7 @@ export default function Calculadora() {
 							secondary={
 								<div>
 									<span className={classes.DoseDaDroga}>
-										Dose de {DobutaDoseAtual.toFixed(2)}mcg/kg/min
+										Dose atual de {DobutaDoseAtual.toFixed(2)}mcg/kg/min
 									</span>
 									<br />
 									<span className={classes.MlDaDroga}>
@@ -282,7 +284,7 @@ export default function Calculadora() {
 							secondary={
 								<div>
 									<span className={classes.DoseDaDroga}>
-										Dose de {FentanilDoseAtual.toFixed(2)}mcg/kg/min
+										Dose atual de {FentanilDoseAtual.toFixed(2)}mcg/kg/h
 									</span>
 									<br />
 									<span className={classes.MlDaDroga}>
@@ -311,7 +313,7 @@ export default function Calculadora() {
 							secondary={
 								<div>
 									<span className={classes.DoseDaDroga}>
-										Dose de {PrecedexDoseAtual.toFixed(2)}mcg/kg/min
+										Dose atual de {PrecedexDoseAtual.toFixed(2)}mcg/kg/h
 									</span>
 									<br />
 									<span className={classes.MlDaDroga}>
@@ -340,7 +342,7 @@ export default function Calculadora() {
 							secondary={
 								<div>
 									<span className={classes.DoseDaDroga}>
-										Dose de {PropofolDoseAtual.toFixed(2)}mcg/kg/min
+										Dose atual de {PropofolDoseAtual.toFixed(2)}mcg/kg/h
 									</span>
 									<br />
 									<span className={classes.MlDaDroga}>
@@ -369,7 +371,7 @@ export default function Calculadora() {
 							secondary={
 								<div>
 									<span className={classes.DoseDaDroga}>
-										Dose de {MidazolamDoseAtual.toFixed(2)}mcg/kg/min
+										Dose atual de {MidazolamDoseAtual.toFixed(2)}mcg/kg/h
 									</span>
 									<br />
 									<span className={classes.MlDaDroga}>
@@ -398,7 +400,7 @@ export default function Calculadora() {
 							secondary={
 								<div>
 									<span className={classes.DoseDaDroga}>
-										Dose de {AtracurioDoseAtual.toFixed(2)}mcg/kg/min
+										Dose atual de {AtracurioDoseAtual.toFixed(2)}mcg/kg/h
 									</span>
 									<br />
 									<span className={classes.MlDaDroga}>
@@ -427,7 +429,7 @@ export default function Calculadora() {
 							secondary={
 								<div>
 									<span className={classes.DoseDaDroga}>
-										Dose de {RocuronioDoseAtual.toFixed(2)}mcg/kg/min
+										Dose atual de {RocuronioDoseAtual.toFixed(2)}mcg/kg/h
 									</span>
 									<br />
 									<span className={classes.MlDaDroga}>
@@ -457,7 +459,7 @@ export default function Calculadora() {
 							secondary={
 								<div>
 									<span className={classes.DoseDaDroga}>
-										Dose de {CisatracurioDoseAtual.toFixed(2)}mcg/kg/min
+										Dose atual de {CisatracurioDoseAtual.toFixed(2)}mcg/kg/h
 									</span>
 									<br />
 									<span className={classes.MlDaDroga}>
@@ -488,7 +490,7 @@ export default function Calculadora() {
 						secondary={
 							<div>
 								<span className={classes.DoseDaDroga}>
-									Dose de {PancuronioDoseAtual.toFixed(2)}mcg/kg/min
+									Dose atual de {PancuronioDoseAtual.toFixed(2)}mcg/kg/h
 								</span>
 								<br />
 								<span className={classes.MlDaDroga}>
@@ -517,7 +519,7 @@ export default function Calculadora() {
 						secondary={
 							<div>
 								<span className={classes.DoseDaDroga}>
-									Dose de {NiprideDoseAtual.toFixed(2)}mcg/kg/min
+									Dose atual de {NiprideDoseAtual.toFixed(2)}mcg/kg/h
 								</span>
 								<br />
 								<span className={classes.MlDaDroga}>
@@ -546,7 +548,7 @@ export default function Calculadora() {
 						secondary={
 							<div>
 								<span className={classes.DoseDaDroga}>
-									Dose de {TridilDoseAtual.toFixed(2)}mcg/kg/min
+									Dose atual de {TridilDoseAtual.toFixed(2)}mcg/kg/h
 								</span>
 								<br />
 								<span className={classes.MlDaDroga}>
