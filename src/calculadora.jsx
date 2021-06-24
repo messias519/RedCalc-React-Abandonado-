@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 		border: "2px solid #000000",
 		boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
 		height: 110,
-		width: 280,
+		width: 290,
 		padding: 18
 	},
 	Subtitulo: {
