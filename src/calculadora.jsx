@@ -194,7 +194,7 @@ export default function Calculadora() {
 				<br />
 				<Grid container spacing={2} alignItems="center">
 					<Grid item className={classes.Subtitulo}>
-						<center> {mlh} ml/h </center>
+						<center> {mlh}ml/h </center>
 					</Grid>
 					<Grid item>
 						<Slider
