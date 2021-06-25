@@ -33,7 +33,8 @@ const useStyles = makeStyles((theme) => ({
 		border: "2px solid #ffffff",
 		borderRadius: 10,
 		textAlign: "center",
-		width: 90
+		width: 100,
+		height: 45
 	},
 
 	Titulo: {
